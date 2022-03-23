@@ -5,6 +5,17 @@
   to {
     transform: rotate(359deg); } }
 
+#myBtn {
+        color: var(--text-main);
+        position: fixed;
+        bottom: 2.5%;
+        float: right;
+        right: 2.5%;
+        max-width: 30px;
+        font-size: 20px;
+        z-index: 999;
+}
+
 .delete, .is-unselectable, .button {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -196,7 +207,9 @@ html {
 img,
 video {
   height: auto;
-  max-width: 100%; }
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;}
 
 iframe {
   border: 0; }
@@ -237,13 +250,13 @@ button,
 input,
 select,
 textarea {
-  font-family: "IBM Plex Sans", BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif; }
+  font-family: "Fira Sans", sans-serif; }
 
 code,
 pre {
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: auto;
-  font-family: monospace; }
+  font-family: "Source Code Pro",monospace; }
 
 body {
   color: var(--text-main);
@@ -663,19 +676,19 @@ a.has-text-danger:hover, a.has-text-danger:focus {
   font-weight: 700 !important; }
 
 .is-family-primary {
-  font-family: "IBM Plex Sans", BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif !important; }
+  font-family: "Fira Sans", sans-serif !important; }
 
 .is-family-secondary {
-  font-family: "IBM Plex Sans", BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif !important; }
+  font-family: "Fira Sans", sans-serif !important; }
 
 .is-family-sans-serif {
-  font-family: "IBM Plex Sans", BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif !important; }
+  font-family: "Fira Sans", sans-serif !important; }
 
 .is-family-monospace {
-  font-family: monospace !important; }
+  font-family: "Source Code Pro",monospace !important; }
 
 .is-family-code {
-  font-family: monospace !important; }
+  font-family: "Source Code Pro",monospace !important; }
 
 .is-block {
   display: block !important; }
@@ -1204,8 +1217,6 @@ a.box-feed:active {
 .content sub {
   font-size: 75%; }
 
-.content table {
-  width: 100%; }
   .content table td,
   .content table th {
     border: 1px solid var(--border);
@@ -2732,7 +2743,7 @@ a.navbar-item,
     width: 40%; }
   .columns.is-mobile > .column.is-three-fifths {
     flex: none;
-    width: 60%; }
+    width: 90%; }
   .columns.is-mobile > .column.is-four-fifths {
     flex: none;
     width: 80%; }
@@ -2964,7 +2975,7 @@ a.navbar-item,
       width: 40%; }
     .column.is-three-fifths, .column.is-three-fifths-tablet {
       flex: none;
-      width: 60%; }
+      width: 70%; }
     .column.is-four-fifths, .column.is-four-fifths-tablet {
       flex: none;
       width: 80%; }
@@ -3887,7 +3898,7 @@ a.navbar-item,
 @media screen and (min-width: 769px), print {
   .section.is-note .column.is-primary-content,
     .note-page-section {
-      padding: 3rem 8rem; } 
+      padding: 2rem 1.5rem 2rem 3.5rem; } 
   .note-cards .content {
     width: 88%; }
     }

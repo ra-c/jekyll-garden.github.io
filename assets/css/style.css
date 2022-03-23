@@ -5,11 +5,11 @@ layout: Stylesheet
 @import "{{site.url}}/assets/css/highlight.css";
 /* Containers: Body, Container, Box, Main, Header, Content */ 
 
-html, html[data-theme="light"] {
-    --bg-main: #FFFFFF;
-    --bg-sub: #FAFAFC;
+html, html[data-theme="dusk"] {
+    --bg-main: #F4ECD8;
+        --bg-sub: #E1DBCD;
     --color-bis: #363636;
-    --text-main: #18181C;
+    --text-main: #5B4636;
     --text-sub: #5D5D67;
     --link: #2380ED;
     --border: #E5E5E5;
@@ -25,6 +25,15 @@ html[data-theme="dark"] {
     --border: #353535;
 }
 
+html[data-theme="light"] {
+    --bg-main: #FFFFFF;
+    --bg-sub: #FAFAFC;
+    --text-main: #18181C;
+    --text-sub: #5D5D67;
+    --link: #2380ED;
+    --border: #E5E5E5;
+} 
+
 
 @media (prefers-color-scheme: dark) {
     html, html[data-theme="dark"] {
@@ -36,14 +45,23 @@ html[data-theme="dark"] {
         --border: #353535;
     }
 
-    html[data-theme="light"] {
-	    --bg-main: #FFFFFF;
-        --bg-sub: #FAFAFC;
-        --text-main: #18181C;
+    html[data-theme="dusk"] {
+	    --bg-main: #F4ECD8;
+        --bg-sub: #E1DBCD;
+        --text-main: #5B4636;
         --text-sub: #5D5D67;
         --link: #2380ED;
         --border: #E5E5E5;
   } 
+
+  html[data-theme="light"] {
+    --bg-main: #FFFFFF;
+    --bg-sub: #FAFAFC;
+    --text-main: #18181C;
+    --text-sub: #5D5D67;
+    --link: #2380ED;
+    --border: #E5E5E5;
+} 
 }
 
 
@@ -90,7 +108,7 @@ main {
 }
 
 .buttons.for-back-home:not(:last-child) {
-    margin-left: 0;
+    margin-left: 0rem;
     margin-bottom: 1rem;
 }
 
@@ -101,7 +119,7 @@ main {
 
 @media screen and (min-width: 768px) {
     .buttons.for-back-home:not(:last-child) {
-        margin-left: 2rem;
+        margin-left: 0rem;
     } 
 }
 
@@ -221,7 +239,7 @@ h6 {
 
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
-    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: 'Fira Sans', sans-serif;
 }
 
 p a,
@@ -273,6 +291,10 @@ code {
     padding: 2px 2px 2px 2px;
     border: 1px solid var(--secondary-border-color);
     border-radius: 4px;
+}
+
+.fas{
+    color: var(--text-main);
 }
 
 .regular-sans code {
@@ -609,7 +631,6 @@ hr {
 
 #markdown-toc li {
     margin-left: 1rem;
-    list-style: decimal;
 }
 
 #markdown-toc li * {
@@ -618,10 +639,9 @@ hr {
 
 #markdown-toc {
     padding: 1.5em;
-    list-style: decimal;
+    list-style: disc;
     display: inline-block;
     background: var(--bg-sub);
-    width: 100%;
     margin: 0;
 }
 
@@ -1475,7 +1495,9 @@ label.srs-toggle {
 }
 
 
-
+.box {
+    width: 80% !important;
+}
 @media screen and (max-width: 800px){
 
 .box {
