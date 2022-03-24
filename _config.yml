@@ -111,5 +111,6 @@ sass:
 defaults:
   - scope:
       path: ""
+      type: notes
     values:
       layout: note
